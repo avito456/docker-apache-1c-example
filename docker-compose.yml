@@ -7,4 +7,11 @@ services:
       - 80:80
     extra_hosts:
       - "Serv1C:192.168.1.15"
-
+  apache1-1c:
+    build: .
+    restart: always
+    ports:
+      - 8080:80
+    extra_hosts:
+      - "Serv1C:192.168.1.15"
+    
